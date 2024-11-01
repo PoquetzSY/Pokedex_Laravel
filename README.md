@@ -108,7 +108,7 @@ Visita la ruta `/saved` para ver una lista de todos los Pokémon que has guardad
 
 ## Ejemplo de configuración de rutas
 
-    ```php
+    ```bash
     use App\Http\Controllers\PokemonController;
 
     Route::get('/', [PokemonController::class, 'index'])->name('home');
@@ -121,7 +121,7 @@ Visita la ruta `/saved` para ver una lista de todos los Pokémon que has guardad
 
     Si deseas cambiar el intervalo de tiempo en el que se muestra un nuevo Pokémon, puedes modificar el valor de `setInterval` en el archivo `welcome.blade.php`:
 
-    ```javascript
+    ```bash
     setInterval(fetchRandomPokemon, 30000);
     ```
 
