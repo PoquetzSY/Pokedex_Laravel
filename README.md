@@ -108,22 +108,19 @@ Visita la ruta `/saved` para ver una lista de todos los Pokémon que has guardad
 
 ## Ejemplo de configuración de rutas
 
-    ```bash
     use App\Http\Controllers\PokemonController;
 
     Route::get('/', [PokemonController::class, 'index'])->name('home');
     Route::post('/guardar-pokemon', [PokemonController::class, 'store'])->name('storePokemon');
     Route::get('/pokemons', [PokemonController::class, 'show'])->name('pokemons.list');
     Route::get('/api/random-pokemon', [PokemonController::class, 'getRandomPokemon'])->name('api.randomPokemon');
-    ```
 
 ## Personalización
 
-    Si deseas cambiar el intervalo de tiempo en el que se muestra un nuevo Pokémon, puedes modificar el valor de `setInterval` en el archivo `welcome.blade.php`:
+Si deseas cambiar el intervalo de tiempo en el que se muestra un nuevo Pokémon, puedes modificar el valor de `setInterval` en el archivo `welcome.blade.php`:
 
-    ```bash
     setInterval(fetchRandomPokemon, 30000);
-    ```
+    
 
 ## Créditos
 
