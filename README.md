@@ -31,9 +31,8 @@ Este proyecto es una Pokédex desarrollada en Laravel que permite consultar info
    composer install
    ```
 
-   Configurar el archivo .env
-
-3. **Crea una copia del archivo .env.example y renómbralo a .env:**
+3. **Configurar el archivo .env**
+   Crea una copia del archivo .env.example y renómbralo a .env:
 
     ```bash
     cp .env.example .env
